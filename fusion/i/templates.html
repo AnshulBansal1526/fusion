@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fusion Templates</title>
+  <!-- plugins:css -->
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="../../js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-dark/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../../images/logo-light.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../images/logo-mini.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">build a js based app</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="../../images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="../../images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="templates.html">
+              <i class="icon-cog menu-icon"></i>
+              <span class="menu-title">Templates</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+              </div>
+            </div>
+          </div>
+          <center><h1>Templates : </h1> </center><br>
+          <div class="col-md-5 grid-margin grid-margin-md-0 stretch-card">
+							<div class="card">
+								<div class="card-body text-center">
+									<div>
+										<h4>Future Ui</h4><br>
+										<p class="text-muted mb-0">[Premium]</p>
+									</div><br>
+									<p class="mt-2 card-text">
+                    Price : Free<br>
+                    Light Theme : Included<br>
+                    Dark Theme : Included<br>
+									</p>
+									<a href="https://www.mediafire.com/file/2cv7hx9u4lpzqk8/future_Ui.zip/file" class="btn btn-info btn-sm mt-3 mb-4">Download</a>
+									<div class="border-top pt-3">
+                    <img src="https://media.discordapp.net/attachments/800984257769898034/833609266333351936/HyvNTBWU0S_1.png" alt="" height="170" width="320">
+									</div>
+								</div>
+							</div>
+						</div>
+            <br>
+            <div class="col-md-5 grid-margin grid-margin-md-0 stretch-card">
+  							<div class="card">
+  								<div class="card-body text-center">
+  									<div>
+  										<h4>Vanta Admin</h4><br>
+  										<p class="text-muted mb-0">[Premium]</p>
+  									</div><br>
+  									<p class="mt-2 card-text">
+                      Price : Free<br>
+                      Light Theme : Included<br>
+                      Dark Theme : Included<br>
+  									</p>
+  									<a href="https://www.mediafire.com/file/k551b5c9m0b8elf/Vanta_Admin.zip/file" class="btn btn-info btn-sm mt-3 mb-4">Download</a>
+  									<div class="border-top pt-3">
+                      <img src="https://media.discordapp.net/attachments/800984257769898034/833611214486765618/IplH0xl6w9_1.png" alt="" height="220" width="320">
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+              <br>
+              <div class="col-md-5 grid-margin grid-margin-md-0 stretch-card">
+    							<div class="card">
+    								<div class="card-body text-center">
+    									<div>
+    										<h4>Corona Admin</h4><br>
+    										<p class="text-muted mb-0">[Premium]</p>
+    									</div><br>
+    									<p class="mt-2 card-text">
+                        Price : Free<br>
+                        Light Theme : Included<br>
+                        Dark Theme : Included<br>
+    									</p>
+    									<a href="https://www.mediafire.com/file/a2f85qdrdei82fs/Corona_Admin.zip/file" class="btn btn-info btn-sm mt-3 mb-4">Download</a>
+    									<div class="border-top pt-3">
+                        <img src="https://media.discordapp.net/attachments/800984257769898034/833611593203580938/z741qOVHBk_1.png" alt="" height="170" width="320">
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+                <br>
+                <div class="col-md-5 grid-margin grid-margin-md-0 stretch-card">
+      							<div class="card">
+      								<div class="card-body text-center">
+      									<div>
+      										<h4>Skydash Admin</h4><br>
+      										<p class="text-muted mb-0">[Premium]</p>
+      									</div><br>
+      									<p class="mt-2 card-text">
+                          Price : Free<br>
+                          Light Theme : Included<br>
+                          Dark Theme : Included<br>
+      									</p>
+      									<a href="https://www.mediafire.com/file/k8myuj42p390rq4/skydash.zip/file" class="btn btn-info btn-sm mt-3 mb-4">Download</a>
+      									<div class="border-top pt-3">
+                          <img src="https://media.discordapp.net/attachments/800984257769898034/833611993604292608/gORBn8n.png" alt="" height="130" width="320">
+      									</div>
+      								</div>
+      							</div>
+      						</div>
+                  <br>
+                  <div class="col-md-5 grid-margin grid-margin-md-0 stretch-card">
+        							<div class="card">
+        								<div class="card-body text-center">
+        									<div>
+        										<h4>Aqua Ui</h4><br>
+        										<p class="text-muted mb-0">[Premium]</p>
+        									</div><br>
+        									<p class="mt-2 card-text">
+                            Price : Free<br>
+                            Light Theme : Included<br>
+                            Dark Theme : Included<br>
+        									</p>
+        									<a href="https://www.mediafire.com/file/9ljcw0e2yzsqo7y/aquaui.zip/file" class="btn btn-info btn-sm mt-3 mb-4">Download</a>
+        									<div class="border-top pt-3">
+                            <img src="https://media.discordapp.net/attachments/800984257769898034/833612397847117874/unknown_1.png" alt="" height="120" width="320">
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+		<br>
+		<div class="col-md-5 grid-margin grid-margin-md-0 stretch-card">
+  							<div class="card">
+  								<div class="card-body text-center">
+  									<div>
+  										<h4>Allur Ui</h4><br>
+  										<p class="text-muted mb-0">[Premium]</p>
+  									</div><br>
+  									<p class="mt-2 card-text">
+                      Price : Free<br>
+                      Light Theme : Included<br>
+                      Dark Theme : Included<br>
+  									</p>
+  									<a href="https://www.mediafire.com/file/synmyjkjffv6gok/allur+ui.zip/file" class="btn btn-info btn-sm mt-3 mb-4">Download</a>
+  									<div class="border-top pt-3">
+                      <img src="https://cdn.discordapp.com/attachments/835492030167515137/836826392066654239/Screenshot_2021-04-28_082010.png" alt="" height="160" width="320">
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021. Fusion Templates. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Made with <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../../vendors/chart.js/Chart.min.js"></script>
+  <script src="../../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../../js/dataTables.select.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/dashboard.js"></script>
+  <script src="../../js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
